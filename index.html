@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lentelė</title>
+	<title>Tvarkaraštis</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-tekstas
+	<header >
+		<div class="container">
+			<nav class="navigation">
+				<a href="#"><h2>Tvarkaraštis</h2>
+				</a>
+				<ul class="menu">
+					<li><a href="#about">Apie</a></li>
+					<li><a href="#contact">Kontaktai</a></li>
+					<li><a href="#send">Pasiūlymas</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="intro">
+		<div class="overlay"></div>
+		<div class="container">
+			<h3>Patikėk tvarkaraščio sudarymą kompiuteriui!</h3>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="container">
+			<h3>Apie</h3>
+			<p>Įveskite, išsaugokite pagrindinius duomenis: klases, mokytojus, disciplinas, pamokų laiką ir kompiuteris Jums pateiks pamokų tvarkaraštį.
+			</p>
+		</div>
+	</section>
+	<section class="team">
+		<div class="container">
+			<h3>Sprendimai ugdymo tipui</h3>
+			<div class="block">
+				<div class="info">
+					<img class="foto" src="images/pradine.jpg" alt="pradine">
+					<p><b>Pradinis</b></p>
+				</div>
+				<div class="info">
+					<img class="foto" src="images/pagrindine.jpg" alt="pagrindine">
+					<p><b>Pagrindinis</b></p>
+				</div>
+					<div class="info">
+					<img class="foto" src="images/gimnazija.jpg" alt="gimnazija">
+					<p><b>Vidurinis</b></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="send">
+		<div class="container">
+			<h3>Pasiūlymas tvarkaraščio sudarymui</h3>
+			<form id="send">
+				<input type="name" name="name" placeholder="Vardas"><br>
+				<input type="email" name="email" placeholder="elektroninis paštas"><br>
+				Ugdymo tipas:
+				 <select id="school" name="country">
+		          <option value="pradine">Pradinė</option>
+		          <option value="pagrindine">Pagrindinė</option>
+		          <option value="gimnazija">Vidurinė</option>
+		        </select>
+		         <textarea id="offer" name="offer" placeholder="Jūsų siūlymas"></textarea>
+				<button class="submit">Siųsti</button>
+			</form>
+		</div>
+	</section>
+	<footer id="contact">
+		<div class="container">
+			<div class="back" >
+				<a href="#"><h2>Tvarkaraštis</h2></a>
+				<ul class="row">
+					<li><div class="up"><a href="https://gmail.com"><img src="images/Shape 9.png" alt=""></a></div></li>
+					<li><div class="up"><a href="https://facebook.com"><img src="images/Shape 7.png" alt=""></a></div></li>
+				</ul>
+			</div>
+		<hr>
+			<div class="after">
+				<ul class="row">
+					<li>&copy; V. Janušienė 2019</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
